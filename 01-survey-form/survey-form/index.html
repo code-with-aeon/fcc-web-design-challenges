@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website is using a background image from Rawpixel under CC0 1.0 Universal license.">
+    <title>Student's Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title">Student Survey Form</h1>
+            <p id="description">
+                Your feedback is crucial for improving our learning experience. Please share your thoughts so we can continue to enhance our content and gather valuable insights. Thank you!
+            </p>
+        </header>
+        <form action="#" id="survey-form">
+            <section class="form-group">
+                <label for="name" id="name-label">First Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your first name" class="form-control" required>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last name" class="form-control" required>           
+            </section>
+            <section class="form-group group-row">
+                <div class="email-container">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="form-control" required>
+                </div>
+                <div class="number-container">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" name="number" id="number" placeholder="Enter your age" class="form-control" min="15" max="99">
+                </div>
+            </section>
+            <section class="form-group">
+                <label for="enrolled">What school are you enrolled in?</label>
+                <input type="text" name="enrolled" id="enrolled" placeholder="Please provide the name of the school you're enrolled in" class="form-control">
+                <label for="course">Which Bachelor/Degree did you enroll in?</label>
+                <select id="dropdown" name="course" id="course" required class="form-control">
+                    <option disabled selected value>Select current enrolled</option>
+                    <option value="College of Arts & Sciences">College of Arts & Sciences</option>
+                    <option value="College of Business & Accountancy">College of Business & Accountancy</option>
+                    <option value="College of Computer Studies">College of Computer Studies</option>
+                    <option value="College of Teacher Education">College of Teacher Education</option>
+                    <option value="College of Maritime Education & Training">College of Maritime Education & Training</option>
+                    <option value="College of Engineering">College of Engineering</option>
+                    <option value="College of Health Sciences">College of Health Sciences</option>
+                    <option value="International School of Hospitality & Tourism Management">International School of Hospitality & Tourism Management</option>
+                </select>
+            </section>
+            <section class="form-group">
+                <p>Do you find the school to be a supportive place for learning?</p>
+                <input type="radio" name="supportive" id="supportiveYes" value="Yes">
+                <label for="supportiveYes">Yes</label>
+                <input type="radio" name="supportive" id="supportiveNo" value="No">
+                <label for="supportiveNo">No</label>
+            </section>
+            <section class="form-group">
+                <p>Are you satisfied with the resources and facilities available at the school (e.g., library, labs)?</p>
+                <input type="radio" name="status" id="Yes" value="Yes">
+                <label for="Yes">Yes</label>
+                <input type="radio" name="status" id="No" value="No">
+                <label for="No">No</label>
+            </section>
+            <section class="form-group">
+                <p>Which of the following teaching practices do you find most effective? (Select all that apply)</p>               
+                <label for="group-discussions">
+                    <input type="checkbox" name="refer" value="Group discussions" id="group-discussions">Group Discussions
+                </label>
+                <br>
+                <label for="hands-on-activities">
+                    <input type="checkbox" name="refer" value="Hands-on activities" id="hands-on-activities">Hands-on activities
+                </label>
+                <br>
+                <label for="multimedia-presentations">
+                    <input type="checkbox" name="refer" value="Multimedia presentations" id="multimedia-presentations">Multimedia presentations
+                </label>
+                <br>
+                <label for="real-life-examples">
+                    <input type="checkbox" name="refer" value="Real-life examples" id="real-life-examples">Real-life examples
+                </label>
+                <br>
+                <label for="one-on-one-support">
+                    <input type="checkbox" name="refer" value="One-on-one support" id="one-on-one-support">One-on-one support
+                </label>
+            </section>
+            <section class="form-group">
+                <label for="suggestions">Please share any other comments or suggestions you have about the school.</label>
+                <br>
+                <textarea name="suggestions" placeholder="Enter your comment here..." id="suggestions" class="input-textarea"></textarea>
+            </section>
+            <section class="form-group">
+                <button type="submit" id="submit" class="form-control">Submit</button>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
