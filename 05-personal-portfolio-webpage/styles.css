@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body {
+    font-family: 'poppins';
+}
+/* styling for navigation bar */
+#navbar {
+    font-family: monospace;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    padding: 0 8rem;
+}
+#navbar * {
+    color: white;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#navbar li {
+    padding: 0 1rem;
+}
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+/* welcome-section */
+#welcome-section {
+    height: 100vh;
+    padding: 20vh 10rem 0 10rem;
+    background: url(https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149145957.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    line-height: 1 ;
+}
+#welcome-section h1{
+    font-size: 2.8rem;
+}
+#welcome-section p {
+    margin-top: 2rem;
+    font-family: monospace;
+}
+/* projects */
+#projects {
+    padding: 12vh 10rem 0 10rem;
+    height: 100vh;
+    overflow: hidden;
+}
+.project-box {
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.project-tile {
+    height: 200px;
+    width: 280px;
+    padding: .5rem .8rem;
+    border-radius: .5rem;
+    border: 1px solid black;
+}
+.project-tile .img-box {
+    border-radius: .5rem;
+    display: block;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(223, 223, 223);
+}
+.project-tile  h3 {
+    padding-top: .5rem;
+    font-size: .8rem;
+}
+.project-tile a {
+    color:rgb(42, 42, 42);
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+.project-tile a:hover {
+    color: rgb(255, 39, 28);
+}
+.project-tile p {
+    font-size: .7rem;
+}
+/* about me section */
+#about {
+    height: 100vh;
+    padding: 12vh 10rem 0 10rem;
+}
+#about h3 {
+    padding-bottom: 0.5rem;
+}
+#about p {
+    padding: 0 2rem;
+}
+#contact, #about-me {
+    padding: 1rem 0;
+}
+#contact ul {
+    margin: 1rem 0 0 2rem;
+    list-style: none;
+}
+#contact li {
+    display: inline-block;
+}
+#contact a {
+    border-radius: 1rem;
+    border: 1px solid black;
+    padding: .5rem 1rem;
+    color: black;
+    text-decoration: none;
+    transition:  ease-in-out 0.5s;
+}
+#contact a:hover {
+    color: #fff;
+    background-color: rgb(68, 68, 68);
+}
+@media (max-width: 1440px) {
+    .project-tile {
+        height: 200px;
+        width: 250px;
+    }
+}
+@media (max-width: 1024px) {
+    #navbar {
+        height: 8vh;
+    }
+    #welcome-section {
+        padding-top: 15rem;
+    }
+    #projects {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    #about {
+        padding: 8vh;
+    }
+}
